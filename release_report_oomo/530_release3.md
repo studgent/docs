@@ -47,10 +47,13 @@
             </td>
             <td>
                 <p>
-                    Navigation to POI
+                    Get Questions from backend and send answer
                 </p>
                 <p>
-                    Quiz with backend
+                    Bugfix Quiz
+                </p>
+                <p>
+                    Navigation to POI
                 </p>
             </td>
             <td>
@@ -76,13 +79,13 @@
                     Navigate to quiz
                 </p>
                 <p>
-                    Calculate distance to POI and Questions
+                    Calculate distances to POI and Questions
                 </p>
                 <p>
-                    Moving GPS functionality to LocationUtil
+                    Implementing a general GPS class that can be used in all activities (LocationUtil)
                 </p>
                 <p>
-                    GPS Disable
+                    'GPS Disable' bug
                 </p>
             </td>
             <td>

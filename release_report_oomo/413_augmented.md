@@ -44,3 +44,4 @@ The POIView class is very basic: it contains a IPointOfInterest object and when 
     }
 
 This method tells the parent View, in our case the OverlayView, the width and height of the custom View. This ensures the POIView has the specified width and height and it doesn't fill the entire screen.
+
