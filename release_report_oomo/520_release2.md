@@ -36,7 +36,7 @@
             </td>
             <td>
                 <p>
-                    Improve Quiz
+                    Implementing Quiz activity with dummy data
                 </p>
             </td>
             <td>
@@ -75,9 +75,12 @@
             </td>
             <td>
                 <p>
-                    Quiz (Multiple choice and single choice question)
-                    (dummy)
+                    Implementing Quiz with Multiple choice and single choice question
                 </p>
+                <p> 
+                    Abreviaton of questions in the listview
+                </p>
+                
             </td>
             <td>
                 <p>
