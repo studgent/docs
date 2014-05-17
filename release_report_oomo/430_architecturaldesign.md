@@ -1,6 +1,6 @@
 ### Architectural design decisions
 
-#### Package structures
+#### Package structure
 
 * Main namespace: **be.ugent.oomo.groep12.studgent**
 * Subpackages:
