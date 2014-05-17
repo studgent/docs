@@ -24,24 +24,23 @@ In the onCreate function, the locationUtil is initialised:
 LocationUtil.getInstance(this).registerDistanceUpdatedListener(this);
 
 The onPause and onResume functions are overwriten so they execute the onPause and onResume functions from the locationUtil class:
-        @Override
-       public void onPause() {
-         	LocationUtil.getInstance(this).onPause();
-               super.onPause();
-        }
+@Override
+public void onPause() {
+ 	     LocationUtil.getInstance(this).onPause();
+       super.onPause();
+}
 
-        @Override
-       public void onResume() {
-
-                LocationUtil.getInstance(this).onResume();
-              super.onResume();
-       }
+@Override
+public void onResume() {
+      LocationUtil.getInstance(this).onResume();
+      super.onResume();
+}
 
 And as last we had to override the distanceIsUpdated function that is called everytime a new GPS location is found.
- @Override
-       public void distanceIsUpdated() {
-               renewListGui();
- }
+@Override
+public void distanceIsUpdated() {
+        renewListGui();
+}
 
 
  
