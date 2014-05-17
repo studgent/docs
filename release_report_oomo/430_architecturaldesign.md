@@ -12,3 +12,6 @@
     * **utilities** : Utility classes to abstract lower level functionality and often used functions and/or algorithms.
     * **view** : Views for augmented reality
 
+#### Class diagram
+
+![Activity class diagram](http://f.cl.ly/items/2Q380K0h1H2y2x08221S/thumb_ab23993ae22b3d2ef62ce752462a86f0.png)
