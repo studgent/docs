@@ -11,7 +11,7 @@ With the LocationListener, the class can accept `LocationChanged` events from th
 
 We specifically implement the `onLocationChanged` method. When this event occurs, the distance field of the relevant POIs and quiz questions are updated.
 
-The GPS must be disabled when the activity goes `onPause`. The `LocationUtil` implements `onPause` and `onResume` to unregister and reregister the `LocationListener` to the `locationManager`.
+The GPS must be disabled when the activity goes `onPause`. The `LocationUtil` also has `onPause` and `onResume` functions to unregister and reregister the `LocationListener` from/to the `locationManager`. These functions can be called from the respective `onPause` and `onResume` eventshandlers in the activity.
 
 ##### Integrating the Activities with the LocationUtil class
 
@@ -20,7 +20,7 @@ Some activities need the current GPS location, these activities need to implemen
 Everytime a new activity registers itself, the `LocationUtil` will immediately trigger the callback with the last known GPS coordinate and/or distances. This results in a non-blocking way of updating the activity with required info from the sensor with limited lines of code.
 
 
-###### Example: `POIListAcitivy`implementing `IDistanceUpdateListener`
+###### Example: `POIListAcitivy` implementing `IDistanceUpdateListener`
 
 ```
 public class POIListActivity extends Activity implements IDistanceUpdatedListener
