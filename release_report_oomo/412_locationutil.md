@@ -20,7 +20,7 @@ Some activities need the current GPS location, these activities need to implemen
 Everytime a new activity registers itself, the `LocationUtil` will immediately trigger the callback with the last known GPS coordinate and/or distances. This results in a non-blocking way of updating the activity with required info from the sensor with limited lines of code.
 
 
-###### Example: `POIListAcitivy`implementing `IDistanceUpdateListener`
+###### Example: `POIListAcitivy` implementing `IDistanceUpdateListener`
 
 ```
 public class POIListActivity extends Activity implements IDistanceUpdatedListener
