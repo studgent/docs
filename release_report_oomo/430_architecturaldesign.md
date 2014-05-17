@@ -17,3 +17,8 @@
 ##### Activities
 
 ![Activity class diagram](http://f.cl.ly/items/2Q380K0h1H2y2x08221S/thumb_ab23993ae22b3d2ef62ce752462a86f0.png)
+
+##### Business objects
+
+![PointOfInterest](http://f.cl.ly/items/473F3z1F1q0f1n470z3U/Image%202014-05-17%20at%2010.43.30%20pm.png)
+
