@@ -20,5 +20,8 @@
 
 ##### Business objects
 
-![PointOfInterest](http://f.cl.ly/items/473F3z1F1q0f1n470z3U/Image%202014-05-17%20at%2010.43.30%20pm.png)
+![Structure for using business object](http://f.cl.ly/items/473F3z1F1q0f1n470z3U/Image%202014-05-17%20at%2010.43.30%20pm.png)
 
+##### Location updates
+
+![Structure of location updates](http://f.cl.ly/items/3S2I3Q2c39331l2m1t28/Image%202014-05-17%20at%2010.50.42%20pm.png)
