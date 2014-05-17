@@ -100,7 +100,7 @@
             </td>
             <td>
                 <p>
-                    Markers in map (dummy)
+                    Mapview with markers (dummy data)
                 </p>
             </td>
             <td>
@@ -148,10 +148,13 @@
             </td>
             <td>
                 <p>
-                    Markers from webservice
+                    Receive POI markers from webservice
                 </p>
                 <p>
-                    POI detail
+                    Marker click event.
+                </p>
+                <p>
+                    POI Detail view
                 </p>
             </td>
             <td>
