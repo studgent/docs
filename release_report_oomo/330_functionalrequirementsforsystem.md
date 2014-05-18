@@ -29,7 +29,7 @@ This information is stored when specifically needed for a challenge. For example
 
 > The application provides an easy way to befriend new people. This feature needs NFC.
 
-This requirement is not met, mostly we did not have NFC capable devices to develop and test this on. It might be a feature considered for upcoming releases. The friend system has been implemented as folow users/friends system that doesn't require NFC.
+This requirement is not met, mostly we did not have NFC capable devices to develop and test this on. It might be a feature considered for upcoming releases. The friend system has been implemented as follow users/friends system that doesn't require NFC.
 
 > The app provides navigation to every point of interest. This will be accomplished by an intent.
 
