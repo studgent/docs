@@ -1,7 +1,7 @@
 
 # Release Report OOMO
 
-App Title: StudGent
+App Title: StudGent ([http://studgent.ahlun.be](http://studgent.ahlun.be))
 
 Group Number: 12
 
