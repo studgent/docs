@@ -1,3 +1,4 @@
+
 ### Architectural design decisions
 
 #### Package structure
@@ -31,3 +32,4 @@ Example for a *Point of Interest* object
 `POIDetailActivity` requires both the distance and location and implements the required interfaces (`IDistanceUpdatedListener` and `ILocationChangedListener`) to listen to these events in the `LocationUtil`
 
 ![Structure of location updates](http://f.cl.ly/items/3S2I3Q2c39331l2m1t28/Image%202014-05-17%20at%2010.50.42%20pm.png)
+

@@ -8,3 +8,4 @@ Because not everyone had a real device and Android emulators do not always measu
 This free service from Twitter greatly improved our productivity to hunt down bugs and errors.
 
 ![](http://f.cl.ly/items/2E2F3h1J3G271B0O1q3X/Image%202014-05-17%20at%204.26.09%20pm.png)
+

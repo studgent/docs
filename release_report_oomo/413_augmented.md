@@ -1,4 +1,6 @@
+
 #### Augmented Reality
+
 One particular feature of the app is the ability to use a simple form of Augmented Reality to look around you for points of interest. At first we looked at implementing an external library called [Mixare](http://www.mixare.org/), but in the end, this proved more complex than originally estimated.
 
 We decided to write an overlay for life camera footage instead, which would be a lot easier and better integrated with the application. All of this functionality is realized with a single Android Activity and 2 custom written View classes. The activity manages camera and sensor input, while the custom OverlayView class manages moving the custom POIView objects across the screen based on the sensor data it receives from the activity.
