@@ -1,5 +1,4 @@
 
-## Release 3
 
 <table cellpadding="0" cellspacing="0">
     <tbody>
