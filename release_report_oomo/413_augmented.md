@@ -11,39 +11,42 @@ The sensor data is also processed in the activity, but we quickly noticed a lot 
 
 In the OverlayView, we keep track of the different POIViews we need to draw onscreen and we make sure they are positioned correctly in relation to the device's heading and each-other on the screen. This method is used:
 
-	public void updateOverlay(int az) {
-		for (POIView v : pois) {
-			float bearing = devLoc.bearingTo(LocationUtil.getLocationFromLatLng(v.getPoi().getLocation()));
-			float t = ((az - bearing) + 180) % 360 - 180;
-			if (t > fov) {
-				// Do not draw, because poi is outside fov
-				v.setVisibility(View.INVISIBLE);
-			} else {
-				float offset = ((az - bearing) + 180) % 360 - 180;
-				offset = (offset / fov) * screenWidth;
-				v.setTranslationX(-offset + (screenWidth / 2 - v.getMinWidth() / 2));
-				// Hackish way to force visibility with a SurfaceHolder beneath this view
-				v.setVisibility(View.VISIBLE);
-				v.requestLayout();
-			}
+```
+public void updateOverlay(int az) {
+	for (POIView v : pois) {
+		float bearing = devLoc.bearingTo(LocationUtil.getLocationFromLatLng(v.getPoi().getLocation()));
+		float t = ((az - bearing) + 180) % 360 - 180;
+		if (t > fov) {
+			// Do not draw, because poi is outside fov
+			v.setVisibility(View.INVISIBLE);
+		} else {
+			float offset = ((az - bearing) + 180) % 360 - 180;
+			offset = (offset / fov) * screenWidth;
+			v.setTranslationX(-offset + (screenWidth / 2 - v.getMinWidth() / 2));
+			// Force visibility with a SurfaceHolder beneath this view
+			v.setVisibility(View.VISIBLE);
+			v.requestLayout();
 		}
 	}
+}
+```
 
 We need to force a redraw of the entire View layout with `requestLayout()` due to a bug with a SurfaceView which does not like other Views being drawn on top of itself.
 
-The POIView class is very basic: it contains a IPointOfInterest object and when it is created, it draws a circle and the point of interest's name onscreen. One particularity has to be noted though: in order to avoid a POIView to fill the entire screen, we had to overwrite the ``` onMeasure() ``` method.
+The POIView class is very basic: it contains a IPointOfInterest object and when it is created, it draws a circle and the point of interest's name onscreen. One particularity has to be noted though: in order to avoid a POIView to fill the entire screen, we had to overwrite the `onMeasure()` method.
 
-	@Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-    	minWidth = 0;
-    	int minHeight = 0;
-    	int textWidth = (int) tpaint.measureText(poi.getName());
-    	int iconWidth = (int) (circleRadius*2 + cpaint.getStrokeWidth()*2);
-    	minWidth = Math.max(textWidth, iconWidth);
-    	minHeight = screenHeight;
-        setMeasuredDimension(MeasureSpec.makeMeasureSpec(minWidth, MeasureSpec.EXACTLY),
-        		MeasureSpec.makeMeasureSpec(minHeight, MeasureSpec.EXACTLY));
-    }
-
+```
+@Override
+protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+    minWidth = 0;
+    int minHeight = 0;
+    int textWidth = (int) tpaint.measureText(poi.getName());
+    int iconWidth = (int) (circleRadius*2 + cpaint.getStrokeWidth()*2);
+    minWidth = Math.max(textWidth, iconWidth);
+    minHeight = screenHeight;
+    setMeasuredDimension(MeasureSpec.makeMeasureSpec(minWidth, MeasureSpec.EXACTLY),
+		MeasureSpec.makeMeasureSpec(minHeight, MeasureSpec.EXACTLY));
+   }
+```
 This method tells the parent View, in our case the OverlayView, the width and height of the custom View. This ensures the POIView has the specified width and height and it doesn't fill the entire screen.
 
