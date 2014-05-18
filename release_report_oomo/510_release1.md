@@ -1,6 +1,6 @@
 
 
-<table cellpadding="0" cellspacing="0" style="margin:0 width: 100%;">
+<table cellpadding="0" cellspacing="0" style="margin:0 0 20px 0; width: 100%;">
     <tbody>
         <tr>
             <td>
