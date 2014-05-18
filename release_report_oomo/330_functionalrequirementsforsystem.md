@@ -21,7 +21,7 @@ The app currently stores the last known GPS location if there is no signal, but 
 
 > The points of interest of the last 5 times you used augmented reality, will be stored locally on your device. This is to reduce the internet traffic. These points of interest will have a maximum life-cycle of 10 days.
 
-We cache all the points of interest and events with their detailed information for many different purposes, like the list and map overview, with a life-cycle of 1 day. That life-cycle duration can be tweaked in a XML file. If there are new items added, only those new items are fetched from the back-end, and not the entire list of data. This is to further reduce internet usage.
+We cache all the points of interest and events with their detailed information for many different purposes, like the list and map overview, with a life-cycle of 1 day. That life-cycle duration can be tweaked in a XML file. The events are filtered at the backend based on the current date, only future events are served.
 
 > For certain challenges, where the trophy points are dependent of the duration, the app will store data like duration.
 
