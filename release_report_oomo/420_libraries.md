@@ -1,4 +1,4 @@
-
+<hr>
 ### Libraries
 
 * Google Play Services: for displaying maps.

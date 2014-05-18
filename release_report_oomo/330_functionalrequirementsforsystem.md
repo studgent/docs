@@ -1,3 +1,4 @@
+<hr>
 ### Functional requirements for the system
 
 Listed below are the system functional requirements we had envisioned at the start of the project. Not all requirements were met, but for the most part, we were able to implement everything that was needed for the app to function as intended.

@@ -1,7 +1,7 @@
 
 #### Crashlytics
 
-![](http://f.cl.ly/items/123G1u1b1O0c3F1i320k/3236_8ff9.jpeg)
+![](http://f.cl.ly/items/2u410m2Y3k223p280l2n/3236_8ff9.jpg)
 
 Because not everyone had a real device and Android emulators do not always measure up to the real thing, we decided to try Crashlytics. With Crashlytics, whenever there was an exception, the stacktrace and environment information was uploaded to the server and catalogued in a new or existing issue.
 

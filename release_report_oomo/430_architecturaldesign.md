@@ -1,4 +1,4 @@
-
+<hr>
 ### Architectural design decisions
 
 #### Package structure
@@ -20,13 +20,13 @@
 An overview of how our activities are connected. `LoginActivity` and `AboutActivity` are separate and are called from the Options Menu. `POIListAcitivity` is reused for Checkins and can be called from `POIMapviewActivity` and `ChallengeActivity`, the `Intent` gets an extra parameter that can be used to alter the behaviour of the `POIListActivity`.
 
 ![Activity class diagram](http://f.cl.ly/items/2Q380K0h1H2y2x08221S/thumb_ab23993ae22b3d2ef62ce752462a86f0.png)
-
+<hr>
 ##### Business objects
 
 Example for a *Point of Interest* object
 
 ![Structure for using business object](http://f.cl.ly/items/473F3z1F1q0f1n470z3U/Image%202014-05-17%20at%2010.43.30%20pm.png)
-
+<hr>
 ##### Location updates
 
 `POIDetailActivity` requires both the distance and location and implements the required interfaces (`IDistanceUpdatedListener` and `ILocationChangedListener`) to listen to these events in the `LocationUtil`

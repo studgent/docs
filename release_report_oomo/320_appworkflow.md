@@ -1,3 +1,4 @@
+<hr>
 ### App workflow
 
 We've chosen for a crisp, clean and flat design with vivid colors. We have focused on usability rather than fancy layouts and tried to make a minimalist design, while still maintaining a sensible and obvious workflow.
