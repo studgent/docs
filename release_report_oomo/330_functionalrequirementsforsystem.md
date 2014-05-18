@@ -17,11 +17,11 @@ Both this and the GPS requirement were added, with a check built in to allow gra
 
 > The app stores you last GPS coordinates. This is to provide augmented reality when the device doesn’t have a valid GPS signal.
 
-This is currently not implemented, as noted above, we disable augmented reality if there is no GPS signal.
+The app currently stores the last known GPS location if there is no signal, but this is not yet linked to the augmented reality. It is however working for the other parts of the app that use GPS.
 
 > The points of interest of the last 5 times you used augmented reality, will be stored locally on your device. This is to reduce the internet traffic. These points of interest will have a maximum life-cycle of 10 days.
 
-We do cache the points of interest for many different purposes, like the list and map overview, but nothing as fancy as keeping the last 5 times and a 10 day life-cycle.
+We cache all the points of interest and events with their detailed information for many different purposes, like the list and map overview, with a life-cycle of 1 day. That life-cycle duration can be tweaked in a XML file. If there are new items added, only those new items are fetched from the back-end, and not the entire list of data. This is to further reduce internet usage.
 
 > For certain challenges, where the trophy points are dependent of the duration, the app will store data like duration.
 
