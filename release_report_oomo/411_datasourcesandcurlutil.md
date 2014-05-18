@@ -3,7 +3,7 @@
 
 We abstracted the retrieval of business/common objects from the dataprovider and put this logic in DataSources implementing the `IDataSource` interface (see: **Architectural design decisions → Business objects **). The datasources utilize `CurlUtil` to fetch or post data from/to a specific resource. The output from `CurlUtil` is parsed as JSON and mapped to their respective common object. For strings there is a small `JSONUtil` class that expands the `optString` method to correctly identify `null` objects.
 
-##### `CurlUtil`
+##### CurlUtil
 
 Because retrieving data from the web using GET and POST was used for many things, we decided to create this logic in a separate class. This class gives a generic way of posting/getting data to/from an online resource. 
 
