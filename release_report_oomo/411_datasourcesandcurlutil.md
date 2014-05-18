@@ -1,7 +1,7 @@
 
 #### Datasources, CurlUtil and caching
 
-We abstracted the retrieval of business/common objects from the dataprovider and put this logic in DataSources implementing the `IDataSource` interface (see: **Architectural design decisions → Business objects **). The datasources utilize `CurlUtil` to fetch or post data from/to a specific resource. The output from `CurlUtil` is parsed as JSON and mapped to their respective common object. For strings there is a small `JSONUtil` class that expands the `optString` method to correctly identify `null` objects.
+We abstracted the retrieval of business/common objects from the dataprovider and put this logic in DataSources implementing the `IDataSource` interface (see: **Architectural design decisions → Business objects**). The datasources utilize `CurlUtil` to fetch or post data from/to a specific resource. The output from `CurlUtil` is parsed as JSON and mapped to their respective common object. For strings there is a small `JSONUtil` class that expands the `optString` method to correctly identify `null` objects.
 
 ##### CurlUtil
 

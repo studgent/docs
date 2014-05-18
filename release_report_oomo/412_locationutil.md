@@ -3,7 +3,7 @@
 
 The GPS sensor is frequently used in our app. Mostly to know the distance from the current location to a POI or quiz question. This means that every activity that shows a quiz question or a POI should use the same code to update the distance to the object. This resulted in repetitive code.
 
-As a team we concluded to make a single class that can calculate the distances to every POI and every quiz question when the GPS coordinates are updated. The class follows a *singleton design pattern* and it implements the `LocationListener` interface (see: **Architectural design decisions → Location Updates **). With this class we can replace the repetitive code in the activities with only a few lines.
+As a team we concluded to make a single class that can calculate the distances to every POI and every quiz question when the GPS coordinates are updated. The class follows a *singleton design pattern* and it implements the `LocationListener` interface (see: **Architectural design decisions → Location Updates**). With this class we can replace the repetitive code in the activities with only a few lines.
 
 ##### Implementing the LocationListener interface
 
